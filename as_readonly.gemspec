@@ -4,8 +4,8 @@ require File.expand_path('../lib/as_readonly/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Robert Pankowecki"]
   gem.email         = ["robert.pankowecki@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Safely expose collections as readonly objects}
+  gem.summary       = %q{Safley expose collections}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($\)
