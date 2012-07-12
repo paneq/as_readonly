@@ -75,7 +75,7 @@ end
 
 This gem does not prevent calling mutating methods on collection elements. Obviously.
 
-```
+```ruby
 class MyClass
   def initialize
     @collection = ["asd"]
