@@ -90,6 +90,12 @@ c = MyClass.new
 c.collection[0].upcase
 ```
 
+## Inspirations
+
+* http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-talk/144294
+* http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-talk/144375
+* http://msdn.microsoft.com/en-us/library/e78dcd75.aspx
+
 ## Contributing
 
 1. Fork it
