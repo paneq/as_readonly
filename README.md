@@ -24,11 +24,12 @@ Or install it yourself as:
 
         AsReadonly::Array
 
-### TODO:
-
 * `as_readonly/hash`
 
         AsReadonly::Hash
+
+### TODO:
+
 
 * `as_readonly/set`
 
@@ -68,6 +69,25 @@ class MyClass
     @read_collection ||= AsReadonly::Array.new(@collection)
   end
 end
+```
+
+## Note
+
+This gem does not prevent calling mutating methods on collection elements. Obviously.
+
+```
+class MyClass
+  def initialize
+    @collection = ["asd"]
+  end
+
+  def collection
+    @read_collection ||= AsReadonly::Array.new(@collection)
+  end
+end
+
+c = MyClass.new
+c.collection[0].upcase
 ```
 
 ## Contributing

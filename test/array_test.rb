@@ -1,4 +1,5 @@
 require 'test_helper'
+require 'as_readonly/array'
 
 class ArrayTest < MiniTest::Unit::TestCase
   def setup
