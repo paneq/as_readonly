@@ -18,8 +18,6 @@ Or install it yourself as:
 
 ## Require
 
-### Done
-
 * `as_readonly/array`
 
         AsReadonly::Array
@@ -32,9 +30,11 @@ Or install it yourself as:
 
         AsReadonly::Set
 
-* `as_readonly/collections`: `as_readonly/array` + `as_readonly/hash` + `as_readonly/set`
+* `as_readonly/collections`
 
-### TODO:
+        as_readonly/array
+        as_readonly/hash
+        as_readonly/set`
 
 * `as_readonly/core_ext/array`
 
@@ -48,7 +48,14 @@ Or install it yourself as:
 
         set.as_readonly => AsReadonly::Set.new(set)
 
-* `as_readonly/core_ext/collections` - `as_readonly/core_ext/array` + `as_readonly/core_ext/hash` + `as_readonly/core_ext/set`
+* `as_readonly/core_ext/collections` -
+
+        as_readonly/core_ext/array
+        as_readonly/core_ext/hash
+        as_readonly/core_ext/set`
+
+### TODO:
+
 * `as_readonly/core_ext/module` - `Module#attr_readonly`
 * `as_readonly/core_ext/all` -  `as_readonly/core_ext/collections` + `as_readonly/core_ext/module`
 * `as_readonly/all` - same as `as_readonly/core_ext/all`
