@@ -13,7 +13,7 @@ Expose your collections as readonly objects without fear.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Add this line to your application's `Gemfile`:
 
     gem 'as_readonly'
 
