@@ -32,10 +32,10 @@ Or install it yourself as:
 
         AsReadonly::Set
 
+* `as_readonly/collections`: `as_readonly/array` + `as_readonly/hash` + `as_readonly/set`
+
 ### TODO:
 
-
-* `as_readonly/collections`: `as_readonly/array` + `as_readonly/hash` + `as_readonly/set`
 * `as_readonly/core_ext/array`
 
         array.as_readonly => AsReadonly::Array.new(array)
