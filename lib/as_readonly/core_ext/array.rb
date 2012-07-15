@@ -1,7 +1,7 @@
-require 'as_readonly/hash'
+require 'as_readonly/array'
 
-class Hash
+class Array
   def as_readonly
-    AsReadonly::Hash.new(self)
+    AsReadonly::Array.new(self)
   end
 end

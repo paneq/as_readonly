@@ -2,6 +2,15 @@
 
 Expose your collections as readonly objects without fear.
 
+
+## Example
+
+```ruby
+  ara = AsReadonly::Array.new([1,2])
+  ara[0]    # => 1
+  ara.clear # raises NoMethodError
+```
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -48,18 +57,32 @@ Or install it yourself as:
 
         set.as_readonly => AsReadonly::Set.new(set)
 
-* `as_readonly/core_ext/collections` -
+* `as_readonly/core_ext/collections`
 
         as_readonly/core_ext/array
         as_readonly/core_ext/hash
-        as_readonly/core_ext/set`
+        as_readonly/core_ext/set
 
-### TODO:
+* `as_readonly/core_ext/module
 
-* `as_readonly/core_ext/module` - `Module#attr_readonly`
-* `as_readonly/core_ext/all` -  `as_readonly/core_ext/collections` + `as_readonly/core_ext/module`
-* `as_readonly/all` - same as `as_readonly/core_ext/all`
-* `as_readonly` - same as `as_readonly/all`
+        Module#attr_readonly
+
+        class MyClass
+          attr_readonly :array
+          def initialize
+            @array = []
+          end
+        end
+
+        MyClass.new.array.size  => 0
+        MyClass.new.array.clear => NoMethodError exception
+
+* `as_readonly/core_ext/all
+
+        as_readonly/core_ext/collections
+        as_readonly/core_ext/module
+
+* `as_readonly` - everything above
 
 
 ## Usage
