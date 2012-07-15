@@ -47,15 +47,15 @@ Or install it yourself as:
 
 * `as_readonly/core_ext/array`
 
-        array.as_readonly => AsReadonly::Array.new(array)
+        array.as_readonly # => AsReadonly::Array.new(array)
 
 * `as_readonly/core_ext/hash`
 
-        hash.as_readonly => AsReadonly::Hash.new(hash)
+        hash.as_readonly  # => AsReadonly::Hash.new(hash)
 
 * `as_readonly/core_ext/set`
 
-        set.as_readonly => AsReadonly::Set.new(set)
+        set.as_readonly   # => AsReadonly::Set.new(set)
 
 * `as_readonly/core_ext/collections`
 
@@ -63,7 +63,7 @@ Or install it yourself as:
         as_readonly/core_ext/hash
         as_readonly/core_ext/set
 
-* `as_readonly/core_ext/module
+* `as_readonly/core_ext/module`
 
         Module#attr_readonly
 
@@ -77,7 +77,7 @@ Or install it yourself as:
         MyClass.new.array.size  => 0
         MyClass.new.array.clear => NoMethodError exception
 
-* `as_readonly/core_ext/all
+* `as_readonly/core_ext/all`
 
         as_readonly/core_ext/collections
         as_readonly/core_ext/module
