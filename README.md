@@ -74,8 +74,8 @@ Or install it yourself as:
           end
         end
 
-        MyClass.new.array.size  => 0
-        MyClass.new.array.clear => NoMethodError exception
+        MyClass.new.array.size  # => 0
+        MyClass.new.array.clear # => NoMethodError exception
 
 * `as_readonly/core_ext/all`
 
