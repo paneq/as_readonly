@@ -28,12 +28,12 @@ Or install it yourself as:
 
         AsReadonly::Hash
 
-### TODO:
-
-
 * `as_readonly/set`
 
         AsReadonly::Set
+
+### TODO:
+
 
 * `as_readonly/collections`: `as_readonly/array` + `as_readonly/hash` + `as_readonly/set`
 * `as_readonly/core_ext/array`
